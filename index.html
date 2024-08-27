@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guessing Game in Modal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="play-btn">
+        <button class="play-game btn">Play Game</button>
+      </div>
+      <div class="modal">
+        <div class="game-screen">
+          <div class="game-header">
+            <button class="play-again btn">Play Again</button>
+            <p>(Guess the Number 1 to 20)</p>
+          </div>
+          <div class="game-body">
+            <div class="secret-number-container">
+              <h2>Guess the Number!</h2>
+              <p class="secret-number">?</p>
+            </div>
+          </div>
+          <div class="game-footer">
+            <div class="guess-number">
+              <input type="number" class="input" />
+              <button class="btn check">Check</button>
+            </div>
+            <div class="score-card">
+              <p class="game-status">Start Guessing....</p>
+              <p>Score: <span class="score"></span></p>
+              <p>High Score: <span class="high-score"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
